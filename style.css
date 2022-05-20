@@ -15,7 +15,7 @@ body {
 }
 
 img {
-    max-width: 55%;
+    max-width: 40%;
 }
 
 .container {
@@ -62,7 +62,7 @@ a:hover {
 
 .header {
     background-color: #1f2937;
-    min-height: 400px;
+    min-height: 300px;
 }
 
 .header .container {
@@ -91,15 +91,16 @@ button {
 .main h2 {
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 36px;
+    color: #1f2937;
+    text-align: center;
 }
-
 
 .main .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 100px;
-    margin-bottom: 50px;
+    justify-content: center;
+
+    padding-bottom: 50px;
 }
 
 .box button {
@@ -110,34 +111,55 @@ button {
     border-radius: 8px;
 }
 
-/*Figure out how to keep everything centered in page */
-
-.quote .container {
+/* Should I use pictures or buttons to complete this part. How to center or rework hmtl input */
+.quote {
     background-color: #e5e7eB;
     color: #1f2937;
     font-style: italic;
     font-size: 36px;
+}
+
+.quote .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    padding: 100px;
 }
 
-h2 {
-    font-size: 36px;
-    color: #1f2937;
-    text-align: center;
-}
-
-.boxes {
+.quote h3 {
     display: flex;
+    justify-content: flex-end;
 }
 
 .cta {
-    background-color: #3882f6;
+    background-color: white;
+    min-height: 100px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
+
+.cta .container {
+    background-color: #3882f6;
+    min-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+/*Figure out width on the container */
+
+.cta .signup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cta button {
+    border: solid white 1px;
+}
+
 
 .cta p {
     font-weight: normal;
@@ -151,5 +173,4 @@ h2 {
     align-items: center;
 }
 
-
-
+/*Figure out how to fit all content onto one page */
